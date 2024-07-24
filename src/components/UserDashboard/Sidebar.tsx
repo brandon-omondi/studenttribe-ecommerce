@@ -1,4 +1,4 @@
-import Logo from "./Logo"
+import Logo from "../Logo"
 import SidebarBtn from "./SidebarBtn"
 
 
@@ -12,7 +12,7 @@ function Sidebar() {
           <SidebarBtn iconUrl="https://i.postimg.cc/qN6LZSfr/direct-inbox.png" buttonName="Notifications" link=""/>
           <SidebarBtn iconUrl="https://i.postimg.cc/DJ0mxVDd/folder-open.png" buttonName="Lessons" link=""/>
           <SidebarBtn iconUrl="https://i.postimg.cc/qg9gx5Gy/task-square.png" buttonName="LoHo Learning" link="https://app.loholearning.co.ke/"/>
-          <SidebarBtn iconUrl="https://i.postimg.cc/QBpqj7xn/shopping-basket.png" buttonName="E-commerce" link=""/>
+          <SidebarBtn iconUrl="https://i.postimg.cc/QBpqj7xn/shopping-basket.png" buttonName="E-commerce" link="/e-commerce"/>
           <div className="pb-40">
             <div className="font-semibold pb-[16px] pt-10">SETTINGS</div>
             <SidebarBtn iconUrl="https://i.postimg.cc/Zvynh8JW/setting-2.png" buttonName="Settings" />

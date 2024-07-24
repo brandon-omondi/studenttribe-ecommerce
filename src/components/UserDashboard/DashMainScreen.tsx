@@ -1,4 +1,4 @@
-import Banner from "./Banner"
+import Banner from "../Banner"
 import NavigateVideos from "./NavigateVideos"
 import SearchBar from "./SearchBar"
 import Topics from "./Topics"

@@ -1,3 +1,4 @@
+import Footer from "../Footer"
 import BestSellers from "./BestSellers"
 import CategoriesSection from "./CategoriesSection"
 import EcommHeader from "./EcommHeader"
@@ -15,6 +16,7 @@ function Ecommerce() {
         <SaleSelection/>
         <NewArrivals/>
         <BestSellers/>
+        <Footer/>
     </div>
   )
 }

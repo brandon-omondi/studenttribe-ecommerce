@@ -1,12 +1,10 @@
 import './App.css'
-import Ecommerce from './components/ecommerce/Ecommerce'
+import ProductDetails from './components/ecommerce/productdetails/ProductDetails';
 
 function App() {
 
   return (
-    <>
-      <Ecommerce/>
-    </>
+    <ProductDetails/>
   )
 }
 

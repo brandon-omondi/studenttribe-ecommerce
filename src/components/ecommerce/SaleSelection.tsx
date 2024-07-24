@@ -13,10 +13,10 @@ function SaleSelection() {
                 <div className="w-[99px] h-12 px-2 py-1 rounded-lg border border-white justify-center items-center inline-flex"><button className="text-center text-white text-base font-normal font-['Inter']">View all</button></div>
             </div>
             <div className="w-[80%] pl-20 flex gap-5">
-              <SaleSelectionCard discount={""} productName={""} price={0} productImgage={""}/>
-              <SaleSelectionCard discount={""} productName={""} price={0} productImgage={""}/>
-              <SaleSelectionCard discount={""} productName={""} price={0} productImgage={""}/>
-              <SaleSelectionCard discount={""} productName={""} price={0} productImgage={""}/>
+              <SaleSelectionCard discount={"-50%"} productName={"Emmy Chapisha Canvas "} price={1900.00} productImgage={"https://i.postimg.cc/mkJPWgKM/emmy-chapisha-canvas-shoes-multi-green-249572-300x-crop-center.jpg"}/>
+              <SaleSelectionCard discount={"-40%"} productName={"Moxxa Dora Red"} price={1900.00} productImgage={"https://i.postimg.cc/T1LP0XhP/moxxa-dora-red-968264-300x-crop-center.jpg"}/>
+              <SaleSelectionCard discount={"-35%"} productName={"Tomcat Printed Navy Blue"} price={1900.00} productImgage={"https://i.postimg.cc/gkhJ6dfS/tomcat-printed-navy-blue-826978.webp"}/>
+              <SaleSelectionCard discount={"-50%"} productName={"Vigo Arya Black"} price={1900.00} productImgage={"https://i.postimg.cc/JhMGLgYT/vigo-arya-black-188830-300x-crop-center.webp"}/>
             </div>
         </div>
         <div className="w-full h-[10%] flex justify-end">
