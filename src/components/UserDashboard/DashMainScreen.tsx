@@ -3,6 +3,7 @@ import NavigateVideos from "./NavigateVideos"
 import SearchBar from "./SearchBar"
 import Topics from "./Topics"
 import VideoSection from "./VideoSection"
+//import Sidebar from "./Sidebar"
 
 
 function DashMainScreen() {

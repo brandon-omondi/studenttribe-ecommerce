@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import { CiDiscount1 } from 'react-icons/ci'
 import { FaHeart } from 'react-icons/fa'
 import { HiOutlineCheckBadge } from 'react-icons/hi2'

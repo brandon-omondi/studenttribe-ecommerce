@@ -35,13 +35,11 @@ interface SidebarBtnProps {
   link?: string;
 }
 
-const SidebarBtn: React.FC<SidebarBtnProps> = ({ iconUrl, buttonName, link }) => {
+const SidebarBtn: React.FC<SidebarBtnProps> = ({ iconUrl, buttonName, link = '' }) => {
   const buttonContent = (
     <button className="w-[160px] h-10 py-4 px-3 rounded-[40px] justify-start items-center gap-2 inline-flex hover:bg-amber-400 hover:bg-opacity-50">
       <div className="w-4 h-4 justify-center items-center flex">
-        <div className="w-4 h-4">
-          <img src={iconUrl} alt="" />
-        </div>
+        <img src={iconUrl} alt={`${buttonName} icon`} className="w-4 h-4" />
       </div>
       <div className="text-zinc-100 text-base font-medium font-['Inter']">
         {buttonName}
@@ -65,4 +63,5 @@ const SidebarBtn: React.FC<SidebarBtnProps> = ({ iconUrl, buttonName, link }) =>
 };
 
 export default SidebarBtn;
+
 
