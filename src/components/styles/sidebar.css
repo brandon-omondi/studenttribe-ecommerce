@@ -1,0 +1,14 @@
+/* sidebar.css */
+.sidebar {
+    background-color: #f8f9fa; /* Example background color */
+    padding: 20px;
+    box-sizing: border-box;
+    height: auto; /* Adjust height as needed */
+  }
+  
+  @media (min-width: 768px) {
+    .sidebar {
+      height: 100vh; /* Full height on larger screens */
+    }
+  }
+  

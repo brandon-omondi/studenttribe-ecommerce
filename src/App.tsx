@@ -1,30 +1,45 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NoSidebarLayout from './components/NoSidebarLayout';
-import Ecommerce from './components/ecommerce/Ecommerce';
-import Dashboard from './components/UserDashboard/Dashboard';
-
+import { Routes, Route, Navigate } from "react-router-dom";
+import Ecommerce from "./components/ecommerce/Ecommerce";
+import Dashboard from "./components/UserDashboard/Dashboard";
+import Login from "./components/(auth)/Login";
+import Signup from "./components/(auth)/Signup";
+import PrivateRoute from "./components/PrivateRoute";
+import { AuthProvider } from "./providers/AuthContext";
+import { useLocalStorage } from "./hooks/useLocalStorage";
+import { Session } from "@supabase/supabase-js";
 
 function App() {
+
+  const [user] = useLocalStorage<Session | null>('user', null);
+
   return (
-    <Router>
+    <AuthProvider>
       <Routes>
+        
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route
           path="/e-commerce"
           element={
-            <NoSidebarLayout>
+            <PrivateRoute>
               <Ecommerce />
-            </NoSidebarLayout>
+            </PrivateRoute>
           }
         />
         <Route
-          path="/"
+          path="/home"
           element={
+            <PrivateRoute>
               <Dashboard />
+            </PrivateRoute>
           }
         />
-        {/* Define other routes here */}
+        <Route
+            path="*"
+            element={user ? <Navigate to="/home" replace /> : <Navigate to="/login" replace />}
+          />
       </Routes>
-    </Router>
+    </AuthProvider>
   );
 }
 

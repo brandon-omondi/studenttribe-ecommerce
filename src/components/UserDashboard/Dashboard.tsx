@@ -1,12 +1,13 @@
 
 import DashMainScreen from './DashMainScreen'
 import Sidebar from './Sidebar'
+import '../styles/dashboard.css'
 
 function Dashboard() {
   return (
-    <div className='flex gap-2'>
-        <Sidebar />
-        <DashMainScreen/>
+    <div className='dashboard flex gap-2'>
+        <Sidebar className = "sidebar"/>
+        <DashMainScreen className="mainscreen"/>
     </div>
   )
 }

@@ -1,0 +1,8 @@
+/* dashMainScreen.css */
+.main-screen {
+    background-color: #ffffff; /* Example background color */
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
+  }
+  

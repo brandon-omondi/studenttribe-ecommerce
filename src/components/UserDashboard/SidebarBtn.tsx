@@ -33,11 +33,12 @@ interface SidebarBtnProps {
   iconUrl: string;
   buttonName: string;
   link?: string;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const SidebarBtn: React.FC<SidebarBtnProps> = ({ iconUrl, buttonName, link = '' }) => {
+const SidebarBtn: React.FC<SidebarBtnProps> = ({ iconUrl, buttonName, link = '', onClick }) => {
   const buttonContent = (
-    <button className="w-[160px] h-10 py-4 px-3 rounded-[40px] justify-start items-center gap-2 inline-flex hover:bg-amber-400 hover:bg-opacity-50">
+    <button onClick={onClick} className="w-[160px] h-10 py-4 px-3 rounded-[40px] justify-start items-center gap-2 inline-flex hover:bg-amber-400 hover:bg-opacity-50">
       <div className="w-4 h-4 justify-center items-center flex">
         <img src={iconUrl} alt={`${buttonName} icon`} className="w-4 h-4" />
       </div>
